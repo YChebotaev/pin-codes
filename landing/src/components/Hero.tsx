@@ -1,3 +1,5 @@
+'use client'
+
 import { Button } from "flowbite-react";
 import { type FC } from "react";
 

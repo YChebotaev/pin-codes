@@ -1,6 +1,8 @@
+'use client'
+
 import { type FC } from "react";
 import Image from "next/image";
-import { Button, ButtonGroup, Navbar, NavbarBrand } from "flowbite-react";
+import { Button, Navbar, NavbarBrand } from "flowbite-react";
 import logoSrc from "../assets/logo.svg";
 
 export const TopBar: FC = () => {
