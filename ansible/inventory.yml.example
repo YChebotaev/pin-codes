@@ -1,6 +1,6 @@
 checkyourstaff:
   hosts:
-    80.87.108.21:
+    <<your_host>>:
       project:
       project_git_url:
       project_dir:
