@@ -7,7 +7,7 @@ export const up = async (knex: Knex): Promise<void> =>
     table.integer('tenantId')
     table.integer('generatorId')
 
-    table.integer('code')
+    table.string('code')
     table.json('payload')
 
     table.boolean('deleted').nullable()
