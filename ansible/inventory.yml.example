@@ -1,0 +1,21 @@
+checkyourstaff:
+  hosts:
+    80.87.108.21:
+      project:
+      project_git_url:
+      project_dir:
+      primary_origin:
+      console_origin:
+      service_origin:
+      service_jwt_secret:
+      service_password_pepper:
+      service_port:
+      pgadmin_port:
+      db_name:
+      db_user:
+      db_user_password:
+      pgadmin_default_email:
+      pgadmin_default_password:
+      openobserve_default_username:
+      openobserve_default_password:
+

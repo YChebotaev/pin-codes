@@ -1,0 +1,8 @@
+{
+  "workspaces": [
+    "service",
+    "service-client",
+    "console",
+    "landing"
+  ]
+}
