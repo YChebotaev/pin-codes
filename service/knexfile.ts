@@ -26,4 +26,4 @@ if (dbName && dbUser && dbUserPassword) {
   }
 }
 
-export { config }
+export default config
