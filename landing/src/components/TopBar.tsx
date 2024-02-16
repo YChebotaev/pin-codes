@@ -19,7 +19,7 @@ export const TopBar: FC = () => {
             color="gray"
             href="https://console.pin-codes.ru/auth/login"
             onClick={() => {
-              ym(96492391, "reachGoal", "goto-login");
+              Reflect.get(window, 'ym')(96492391, "reachGoal", "goto-login");
             }}
           >
             Войти
@@ -28,7 +28,7 @@ export const TopBar: FC = () => {
             color="dark"
             href="https://console.pin-codes.ru/auth/register"
             onClick={() => {
-              ym(96492391, "reachGoal", "goto-register");
+              Reflect.get(window, 'ym')(96492391, "reachGoal", "goto-register");
             }}
           >
             Зарегистрироваться

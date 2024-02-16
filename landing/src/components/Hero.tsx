@@ -19,7 +19,7 @@ export const Hero: FC = () => (
             color="dark"
             href="https://console.pin-codes.ru/auth/register"
             onClick={() => {
-              ym(96492391, "reachGoal", "goto-register");
+              Reflect.get(window, 'ym')(96492391, "reachGoal", "goto-register");
             }}
           >
             Зарегистрироваться
