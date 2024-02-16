@@ -145,7 +145,6 @@
     - name: Install code dependencies
       community.general.npm:
         path: "{{project_dir}}"
-
     - name: Copy console .env
       ansible.builtin.template:
         src: templates/console.env.j2
@@ -173,6 +172,9 @@
       ansible.builtin.shell:
         cmd: pm2 start npm --name service -- start
         chdir: "{{project_dir}}/service"
+    - name: Build landing
+        cmd: npm run build
+        chdir: "{{project_dir}}/landing"
     - name: Start landing
       ansible.builtin.shell:
         cmd: pm2 start npm --name landing -- start

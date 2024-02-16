@@ -4,6 +4,7 @@ import { useMutation } from "@tanstack/react-query";
 import { useNavigate } from "react-router-dom";
 import { AuthLayout } from "../layouts/AuthLayout";
 import { useApiClient } from "../hooks/useApiClient";
+import { refresh } from "../main";
 
 type FieldType = {
   email?: string;
@@ -23,6 +24,8 @@ export const LoginPage: FC = () => {
     },
     onSuccess({ token }) {
       localStorage.setItem("token", token);
+
+      refresh()
 
       navigate("/");
     },

@@ -1,4 +1,4 @@
-checkyourstaff:
+pincodes:
   hosts:
     <<your_host>>:
       project:
@@ -14,6 +14,7 @@ checkyourstaff:
       db_name:
       db_user:
       db_user_password:
+      pgadmin_port:
       pgadmin_default_email:
       pgadmin_default_password:
       openobserve_default_username:

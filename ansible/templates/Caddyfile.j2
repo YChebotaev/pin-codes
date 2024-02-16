@@ -3,8 +3,7 @@
 		output file /var/log/caddy/{{primary_origin}}-access.log
 	}
 
-	root * /var/{{project}}/landing/dist
-	file_server
+	reverse_proxy http://localhost:{{landing_port}}
 }
 
 {{console_origin}} {
@@ -12,7 +11,9 @@
 		output file /var/log/caddy/console.{{primary_origin}}-access.log
 	}
 
-	reverse_proxy http://localhost:{{console_port}}
+	root * /var/{{project}}/console/dist
+	try_files {path} /index.html
+	file_server
 }
 
 {{service_origin}} {
