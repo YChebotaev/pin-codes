@@ -15,7 +15,13 @@ export const Hero: FC = () => (
           <Button color="gray" href="#demo">
             Демо
           </Button>
-          <Button color="dark" href="https://console.pin-codes.ru/auth/register">
+          <Button
+            color="dark"
+            href="https://console.pin-codes.ru/auth/register"
+            onClick={() => {
+              ym(96492391, "reachGoal", "goto-register");
+            }}
+          >
             Зарегистрироваться
           </Button>
         </div>

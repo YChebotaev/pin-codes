@@ -14,10 +14,23 @@ export const TopBar: FC = () => {
           </div>
         </NavbarBrand>
         <div className="flex md:order-2 gap-2">
-          <Button outline color="gray" href="https://console.pin-codes.ru/auth/login">
+          <Button
+            outline
+            color="gray"
+            href="https://console.pin-codes.ru/auth/login"
+            onClick={() => {
+              ym(96492391, "reachGoal", "goto-login");
+            }}
+          >
             Войти
           </Button>
-          <Button color="dark" href="https://console.pin-codes.ru/auth/register">
+          <Button
+            color="dark"
+            href="https://console.pin-codes.ru/auth/register"
+            onClick={() => {
+              ym(96492391, "reachGoal", "goto-register");
+            }}
+          >
             Зарегистрироваться
           </Button>
         </div>
